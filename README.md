@@ -11,7 +11,7 @@ short_description: Romanized Dravidian language ID, code-mixing and sentiment
 
 # ECHO — Intelligence, in Two Modes
 
-> **Live demo:** _link added after deployment_ · **Code:** _link added after deployment_
+> **Live demo:** https://huggingface.co/spaces/arpreran/ECHO · **Code:** https://github.com/arpreran/ECHO
 >
 > In the hosted demo the **NLP Lab** is fully working. The **Companion** needs a chat model (local Ollama by default), which the free host does not provide, so it shows "Ollama not running" there; run ECHO locally to use it.
 
