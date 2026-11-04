@@ -11,9 +11,9 @@ short_description: Romanized Dravidian language ID, code-mixing and sentiment
 
 # ECHO — Intelligence, in Two Modes
 
-> **Live demo:** https://huggingface.co/spaces/arpreran/ECHO · **Code:** https://github.com/arpreran/ECHO
+> **Live demo:** https://echo-q6ub.onrender.com · **Code:** https://github.com/arpreran/ECHO
 >
-> In the hosted demo the **NLP Lab** is fully working. The **Companion** needs a chat model (local Ollama by default), which the free host does not provide, so it shows "Ollama not running" there; run ECHO locally to use it.
+> In the hosted demo the **NLP Lab** is fully working. The **Companion** needs a chat model (local Ollama by default), which the free host does not provide, so it shows "Ollama not running" there; run ECHO locally to use it. The free host sleeps after 15 minutes without visitors, so the first visit can take about a minute to load.
 
 ECHO is one application with two independent products:
 
