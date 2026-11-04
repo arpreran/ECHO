@@ -1,0 +1,164 @@
+{
+  "max_words": 3,
+  "alphas": [
+    0.0,
+    0.25,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    3.0
+  ],
+  "selected_alpha": 0.25,
+  "validation_short_n": 406,
+  "validation": {
+    "0.0": {
+      "accuracy": 0.798,
+      "macro_f1": 0.7828
+    },
+    "0.25": {
+      "accuracy": 0.8177,
+      "macro_f1": 0.8034
+    },
+    "0.5": {
+      "accuracy": 0.8128,
+      "macro_f1": 0.798
+    },
+    "1.0": {
+      "accuracy": 0.798,
+      "macro_f1": 0.782
+    },
+    "1.5": {
+      "accuracy": 0.7906,
+      "macro_f1": 0.772
+    },
+    "2.0": {
+      "accuracy": 0.7709,
+      "macro_f1": 0.7542
+    },
+    "3.0": {
+      "accuracy": 0.7365,
+      "macro_f1": 0.7229
+    }
+  },
+  "test_short_n": 2642,
+  "test_short_by_source_n": {
+    "dakshina": 2366,
+    "tatoeba": 149,
+    "dravidiancodemix": 127
+  },
+  "test_base": {
+    "accuracy": 0.7279,
+    "macro_f1": 0.736,
+    "confusion_matrix": [
+      [
+        133,
+        9,
+        2,
+        2,
+        3
+      ],
+      [
+        10,
+        427,
+        17,
+        30,
+        32
+      ],
+      [
+        9,
+        85,
+        581,
+        104,
+        42
+      ],
+      [
+        12,
+        74,
+        69,
+        494,
+        57
+      ],
+      [
+        11,
+        85,
+        27,
+        39,
+        288
+      ]
+    ]
+  },
+  "test_fused": {
+    "accuracy": 0.7419,
+    "macro_f1": 0.7458,
+    "confusion_matrix": [
+      [
+        139,
+        5,
+        1,
+        1,
+        3
+      ],
+      [
+        13,
+        422,
+        14,
+        29,
+        38
+      ],
+      [
+        12,
+        73,
+        597,
+        91,
+        48
+      ],
+      [
+        16,
+        69,
+        65,
+        495,
+        61
+      ],
+      [
+        16,
+        66,
+        25,
+        36,
+        307
+      ]
+    ]
+  },
+  "labels": [
+    "en",
+    "kn_rom",
+    "ta_rom",
+    "ml_rom",
+    "hi_rom"
+  ],
+  "fused_vs_base": {
+    "delta_accuracy": 0.014,
+    "ci95": [
+      0.0072,
+      0.0204
+    ]
+  },
+  "by_source": {
+    "dakshina": {
+      "n": 2366,
+      "base_accuracy": 0.713,
+      "fused_accuracy": 0.7261
+    },
+    "dravidiancodemix": {
+      "n": 127,
+      "base_accuracy": 0.811,
+      "fused_accuracy": 0.811
+    },
+    "tatoeba": {
+      "n": 149,
+      "base_accuracy": 0.8926,
+      "fused_accuracy": 0.9329
+    }
+  },
+  "note": "alpha selected on validation short inputs only; test evaluated once with the final models."
+}

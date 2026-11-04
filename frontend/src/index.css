@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/* ECHO design tokens: obsidian / midnight navy, electric cyan, restrained violet. */
+@theme {
+  --color-ink-950: #05070d;
+  --color-ink-900: #080b14;
+  --color-ink-850: #0b1020;
+  --color-ink-800: #0f1629;
+  --color-ink-700: #172036;
+  --color-ink-600: #222d47;
+  --color-line: rgb(148 163 184 / 0.12);
+  --color-line-strong: rgb(148 163 184 / 0.22);
+  --color-cyan-glow: #22d3ee;
+  --color-cyan-soft: #67e8f9;
+  --color-violet-glow: #8b5cf6;
+  --color-mist: #94a3b8;
+  --color-fog: #cbd5e1;
+  --color-pos: #34d399;
+  --color-neg: #fb7185;
+  --color-neu: #a5b4fc;
+  --color-warn: #fbbf24;
+
+  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", "Noto Sans Kannada", "Noto Sans Tamil", "Noto Sans Malayalam", "Noto Sans Devanagari", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --shadow-glow: 0 0 0 1px rgb(34 211 238 / 0.25), 0 8px 40px -12px rgb(34 211 238 / 0.35);
+  --shadow-panel: 0 1px 0 0 rgb(255 255 255 / 0.04) inset, 0 20px 50px -24px rgb(0 0 0 / 0.8);
+}
+
+html, body, #root { min-height: 100%; }
+body {
+  margin: 0;
+  background: var(--color-ink-950);
+  color: var(--color-fog);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: "";
+  position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgb(34 211 238 / 0.07), transparent 60%),
+    radial-gradient(900px 600px at 110% 10%, rgb(139 92 246 / 0.07), transparent 60%),
+    linear-gradient(180deg, #05070d 0%, #070b16 50%, #05070d 100%);
+}
+
+@layer components {
+  .glass {
+    background: linear-gradient(180deg, rgb(15 22 41 / 0.72), rgb(8 11 20 / 0.72));
+    border: 1px solid var(--color-line);
+    box-shadow: var(--shadow-panel);
+    backdrop-filter: blur(14px);
+  }
+  .panel {
+    background: rgb(11 16 32 / 0.85);
+    border: 1px solid var(--color-line);
+    box-shadow: var(--shadow-panel);
+  }
+  .eyebrow { @apply text-[11px] font-medium uppercase tracking-[0.18em] text-mist; }
+  .h-display { font-family: var(--font-display); letter-spacing: -0.02em; }
+  .focus-ring { @apply outline-none focus-visible:ring-2 focus-visible:ring-cyan-glow/60 focus-visible:ring-offset-0; }
+  .scroll-thin { scrollbar-width: thin; scrollbar-color: var(--color-ink-600) transparent; }
+}
+
+::selection { background: rgb(34 211 238 / 0.3); color: white; }

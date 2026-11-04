@@ -1,0 +1,199 @@
+{
+  "source": "DravidianCodeMix-2020 (Chakravarthi et al., 2022), CC BY 4.0",
+  "label_mapping": {
+    "positive": "positive",
+    "negative": "negative",
+    "unknown_state": "neutral",
+    "unknown state": "neutral",
+    "mixed_feelings": null,
+    "mixed feelings": null
+  },
+  "excluded": [
+    "Mixed_feelings",
+    "not-<language>"
+  ],
+  "raw_audit": {
+    "kn": {
+      "rows": 7671,
+      "by_split": {
+        "train": 6136,
+        "test": 768,
+        "dev": 767
+      },
+      "raw_labels": {
+        "positive": 3518,
+        "negative": 1484,
+        "not-kannada": 1136,
+        "unknown_state": 842,
+        "mixed_feelings": 691
+      },
+      "text_type": {
+        "romanized": 5553,
+        "native": 1183,
+        "mixed_script": 931,
+        "other": 4
+      }
+    },
+    "ml": {
+      "rows": 19616,
+      "by_split": {
+        "train": 15694,
+        "test": 1962,
+        "dev": 1960
+      },
+      "raw_labels": {
+        "positive": 7907,
+        "unknown_state": 6502,
+        "negative": 2600,
+        "not-malayalam": 1445,
+        "mixed_feelings": 1162
+      },
+      "text_type": {
+        "romanized": 11654,
+        "native": 4642,
+        "mixed_script": 3310,
+        "other": 10
+      }
+    },
+    "ta": {
+      "rows": 44020,
+      "by_split": {
+        "train": 35220,
+        "test": 4402,
+        "dev": 4398
+      },
+      "raw_labels": {
+        "positive": 24873,
+        "unknown_state": 6904,
+        "negative": 5228,
+        "mixed_feelings": 4928,
+        "not-tamil": 2086,
+        "": 1
+      },
+      "text_type": {
+        "romanized": 35504,
+        "native": 6387,
+        "mixed_script": 2071,
+        "other": 58
+      }
+    }
+  },
+  "cleaning": {
+    "kn": {
+      "input": 7671,
+      "after_label_filter": 5844,
+      "conflicting_duplicates_removed": 48,
+      "within_split_duplicates_removed": 184,
+      "cross_split_leakage_removed": 36,
+      "final": 5576,
+      "final_by_split": {
+        "train": 4462,
+        "test": 561,
+        "dev": 553
+      }
+    },
+    "ml": {
+      "input": 19616,
+      "after_label_filter": 17009,
+      "conflicting_duplicates_removed": 133,
+      "within_split_duplicates_removed": 441,
+      "cross_split_leakage_removed": 249,
+      "final": 16186,
+      "final_by_split": {
+        "train": 13054,
+        "dev": 1577,
+        "test": 1555
+      }
+    },
+    "ta": {
+      "input": 44020,
+      "after_label_filter": 37005,
+      "conflicting_duplicates_removed": 48,
+      "within_split_duplicates_removed": 226,
+      "cross_split_leakage_removed": 106,
+      "final": 36625,
+      "final_by_split": {
+        "train": 29364,
+        "dev": 3642,
+        "test": 3619
+      }
+    }
+  },
+  "clean_label_distribution": {
+    "kn/dev": {
+      "positive": 319,
+      "negative": 157,
+      "neutral": 77
+    },
+    "kn/test": {
+      "positive": 336,
+      "negative": 142,
+      "neutral": 83
+    },
+    "kn/train": {
+      "positive": 2628,
+      "negative": 1179,
+      "neutral": 655
+    },
+    "ml/dev": {
+      "positive": 731,
+      "neutral": 605,
+      "negative": 241
+    },
+    "ml/test": {
+      "positive": 712,
+      "neutral": 581,
+      "negative": 262
+    },
+    "ml/train": {
+      "positive": 6181,
+      "neutral": 4909,
+      "negative": 1964
+    },
+    "ta/dev": {
+      "positive": 2409,
+      "neutral": 716,
+      "negative": 517
+    },
+    "ta/test": {
+      "positive": 2456,
+      "neutral": 619,
+      "negative": 544
+    },
+    "ta/train": {
+      "positive": 19724,
+      "neutral": 5497,
+      "negative": 4143
+    }
+  },
+  "clean_text_type_distribution": {
+    "kn": {
+      "romanized": 3800,
+      "native": 976,
+      "mixed_script": 800
+    },
+    "ml": {
+      "romanized": 8808,
+      "native": 4347,
+      "mixed_script": 3029,
+      "other": 2
+    },
+    "ta": {
+      "romanized": 29389,
+      "native": 5502,
+      "mixed_script": 1730,
+      "other": 4
+    }
+  },
+  "clean_code_mixed_share": {
+    "kn": 0.6616,
+    "ml": 0.6557,
+    "ta": 0.7811
+  },
+  "code_mixing_mean_cmi": {
+    "kn": 21.45,
+    "ml": 18.17,
+    "ta": 25.1
+  },
+  "note": "text_type is from Unicode script; is_code_mixed and CMI are derived from the word-level LID model and therefore carry its error rate."
+}

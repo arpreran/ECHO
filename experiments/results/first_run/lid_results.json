@@ -1,0 +1,1136 @@
+{
+  "seed": 42,
+  "classes": [
+    "en",
+    "kn_rom",
+    "ta_rom",
+    "ml_rom",
+    "hi_rom"
+  ],
+  "word_data": {
+    "by_split_lang": {
+      "dev/en": 4099,
+      "dev/hi_rom": 4321,
+      "dev/kn_rom": 4984,
+      "dev/ml_rom": 5597,
+      "dev/ta_rom": 6806,
+      "test/en": 4108,
+      "test/hi_rom": 4442,
+      "test/kn_rom": 5012,
+      "test/ml_rom": 5561,
+      "test/ta_rom": 6833,
+      "train/en": 32878,
+      "train/hi_rom": 41344,
+      "train/kn_rom": 49097,
+      "train/ml_rom": 55948,
+      "train/ta_rom": 66286
+    },
+    "ambiguous_train_strings": 14361
+  },
+  "word_model": {
+    "selected_C": 1.0,
+    "dev_macro_f1": 0.7125,
+    "test": {
+      "n": 25956,
+      "accuracy": 0.723,
+      "macro_f1": 0.7203,
+      "per_class": {
+        "en": {
+          "precision": 0.6501,
+          "recall": 0.8518,
+          "f1-score": 0.7374,
+          "support": 4108.0
+        },
+        "kn_rom": {
+          "precision": 0.81,
+          "recall": 0.7147,
+          "f1-score": 0.7594,
+          "support": 5012.0
+        },
+        "ta_rom": {
+          "precision": 0.8241,
+          "recall": 0.7218,
+          "f1-score": 0.7695,
+          "support": 6833.0
+        },
+        "ml_rom": {
+          "precision": 0.7325,
+          "recall": 0.6765,
+          "f1-score": 0.7034,
+          "support": 5561.0
+        },
+        "hi_rom": {
+          "precision": 0.5947,
+          "recall": 0.6736,
+          "f1-score": 0.6317,
+          "support": 4442.0
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "en",
+          "kn_rom",
+          "ta_rom",
+          "ml_rom",
+          "hi_rom"
+        ],
+        "matrix": [
+          [
+            3499,
+            55,
+            72,
+            85,
+            397
+          ],
+          [
+            357,
+            3582,
+            198,
+            283,
+            592
+          ],
+          [
+            360,
+            215,
+            4932,
+            790,
+            536
+          ],
+          [
+            391,
+            300,
+            594,
+            3762,
+            514
+          ],
+          [
+            775,
+            270,
+            189,
+            216,
+            2992
+          ]
+        ]
+      }
+    }
+  },
+  "sentence_data": {
+    "test/dakshina/hi_rom": 4947,
+    "test/dakshina/kn_rom": 4988,
+    "test/dakshina/ml_rom": 4979,
+    "test/dakshina/ta_rom": 4957,
+    "test/dravidiancodemix/kn_rom": 407,
+    "test/dravidiancodemix/ml_rom": 912,
+    "test/dravidiancodemix/ta_rom": 3311,
+    "test/tatoeba/en": 3000,
+    "train/dakshina/hi_rom": 5000,
+    "train/dakshina/kn_rom": 5000,
+    "train/dakshina/ml_rom": 5000,
+    "train/dakshina/ta_rom": 5000,
+    "train/dravidiancodemix/kn_rom": 3575,
+    "train/dravidiancodemix/ml_rom": 8000,
+    "train/dravidiancodemix/ta_rom": 8000,
+    "train/tatoeba/en": 8000
+  },
+  "sentence_model": {
+    "selected_C": 10.0,
+    "validation_macro_f1": 0.9585,
+    "test_overall": {
+      "n": 27501,
+      "accuracy": 0.9594,
+      "macro_f1": 0.9608,
+      "per_class": {
+        "en": {
+          "precision": 0.96,
+          "recall": 0.9913,
+          "f1-score": 0.9754,
+          "support": 3000.0
+        },
+        "kn_rom": {
+          "precision": 0.9366,
+          "recall": 0.9694,
+          "f1-score": 0.9527,
+          "support": 5395.0
+        },
+        "ta_rom": {
+          "precision": 0.976,
+          "recall": 0.9485,
+          "f1-score": 0.962,
+          "support": 8268.0
+        },
+        "ml_rom": {
+          "precision": 0.9531,
+          "recall": 0.9491,
+          "f1-score": 0.9511,
+          "support": 5891.0
+        },
+        "hi_rom": {
+          "precision": 0.9654,
+          "recall": 0.9598,
+          "f1-score": 0.9626,
+          "support": 4947.0
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "en",
+          "kn_rom",
+          "ta_rom",
+          "ml_rom",
+          "hi_rom"
+        ],
+        "matrix": [
+          [
+            2974,
+            15,
+            4,
+            4,
+            3
+          ],
+          [
+            33,
+            5230,
+            39,
+            45,
+            48
+          ],
+          [
+            48,
+            140,
+            7842,
+            184,
+            54
+          ],
+          [
+            22,
+            96,
+            117,
+            5591,
+            65
+          ],
+          [
+            21,
+            103,
+            33,
+            42,
+            4748
+          ]
+        ]
+      }
+    },
+    "test_by_source": {
+      "dakshina": {
+        "n": 19871,
+        "accuracy": 0.9568,
+        "macro_f1": 0.7669,
+        "per_class": {
+          "en": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "kn_rom": {
+            "precision": 0.9475,
+            "recall": 0.9725,
+            "f1-score": 0.9598,
+            "support": 4988.0
+          },
+          "ta_rom": {
+            "precision": 0.9701,
+            "recall": 0.948,
+            "f1-score": 0.9589,
+            "support": 4957.0
+          },
+          "ml_rom": {
+            "precision": 0.9568,
+            "recall": 0.9468,
+            "f1-score": 0.9517,
+            "support": 4979.0
+          },
+          "hi_rom": {
+            "precision": 0.9686,
+            "recall": 0.9598,
+            "f1-score": 0.9642,
+            "support": 4947.0
+          }
+        },
+        "confusion_matrix": {
+          "labels": [
+            "en",
+            "kn_rom",
+            "ta_rom",
+            "ml_rom",
+            "hi_rom"
+          ],
+          "matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              29,
+              4851,
+              22,
+              43,
+              43
+            ],
+            [
+              6,
+              78,
+              4699,
+              128,
+              46
+            ],
+            [
+              22,
+              88,
+              90,
+              4714,
+              65
+            ],
+            [
+              21,
+              103,
+              33,
+              42,
+              4748
+            ]
+          ]
+        }
+      },
+      "dravidiancodemix": {
+        "n": 4630,
+        "accuracy": 0.9501,
+        "macro_f1": 0.5605,
+        "per_class": {
+          "en": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "kn_rom": {
+            "precision": 0.8441,
+            "recall": 0.9312,
+            "f1-score": 0.8855,
+            "support": 407.0
+          },
+          "ta_rom": {
+            "precision": 0.9862,
+            "recall": 0.9493,
+            "f1-score": 0.9674,
+            "support": 3311.0
+          },
+          "ml_rom": {
+            "precision": 0.938,
+            "recall": 0.9616,
+            "f1-score": 0.9496,
+            "support": 912.0
+          },
+          "hi_rom": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "labels": [
+            "en",
+            "kn_rom",
+            "ta_rom",
+            "ml_rom",
+            "hi_rom"
+          ],
+          "matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              379,
+              17,
+              2,
+              5
+            ],
+            [
+              42,
+              62,
+              3143,
+              56,
+              8
+            ],
+            [
+              0,
+              8,
+              27,
+              877,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "tatoeba": {
+        "n": 3000,
+        "accuracy": 0.9913,
+        "macro_f1": 0.1991,
+        "per_class": {
+          "en": {
+            "precision": 1.0,
+            "recall": 0.9913,
+            "f1-score": 0.9956,
+            "support": 3000.0
+          },
+          "kn_rom": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "ta_rom": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "ml_rom": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "hi_rom": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "labels": [
+            "en",
+            "kn_rom",
+            "ta_rom",
+            "ml_rom",
+            "hi_rom"
+          ],
+          "matrix": [
+            [
+              2974,
+              15,
+              4,
+              4,
+              3
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    "accuracy_by_length": {
+      "1-3 words": 0.7279,
+      "4-7 words": 0.966,
+      "8-15 words": 0.9923,
+      "16+ words": 0.9972
+    },
+    "n_by_length": {
+      "1-3 words": 2642,
+      "4-7 words": 8775,
+      "8-15 words": 11076,
+      "16+ words": 5008
+    }
+  },
+  "langid_baseline": {
+    "description": "langid.py 1.1.6 off-the-shelf (Naive Bayes, 97 languages), no retraining",
+    "test_overall": {
+      "n": 27501,
+      "accuracy": 0.1056,
+      "macro_f1": 0.0936,
+      "per_class": {
+        "en": {
+          "precision": 0.3953,
+          "recall": 0.9683,
+          "f1-score": 0.5615,
+          "support": 3000.0
+        },
+        "kn_rom": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 5395.0
+        },
+        "ta_rom": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 8268.0
+        },
+        "ml_rom": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 5891.0
+        },
+        "hi_rom": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 4947.0
+        },
+        "other": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "en",
+          "kn_rom",
+          "ta_rom",
+          "ml_rom",
+          "hi_rom",
+          "other"
+        ],
+        "matrix": [
+          [
+            2905,
+            0,
+            0,
+            0,
+            0,
+            95
+          ],
+          [
+            360,
+            0,
+            0,
+            1,
+            0,
+            5034
+          ],
+          [
+            2020,
+            0,
+            0,
+            0,
+            0,
+            6248
+          ],
+          [
+            1451,
+            0,
+            0,
+            0,
+            0,
+            4440
+          ],
+          [
+            612,
+            0,
+            0,
+            0,
+            0,
+            4335
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "test_by_source": {
+      "dakshina": {
+        "n": 19871,
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "per_class": {
+          "en": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "kn_rom": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 4988.0
+          },
+          "ta_rom": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 4957.0
+          },
+          "ml_rom": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 4979.0
+          },
+          "hi_rom": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 4947.0
+          },
+          "other": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "labels": [
+            "en",
+            "kn_rom",
+            "ta_rom",
+            "ml_rom",
+            "hi_rom",
+            "other"
+          ],
+          "matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              238,
+              0,
+              0,
+              0,
+              0,
+              4750
+            ],
+            [
+              940,
+              0,
+              0,
+              0,
+              0,
+              4017
+            ],
+            [
+              1191,
+              0,
+              0,
+              0,
+              0,
+              3788
+            ],
+            [
+              612,
+              0,
+              0,
+              0,
+              0,
+              4335
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "dravidiancodemix": {
+        "n": 4630,
+        "accuracy": 0.0,
+        "macro_f1": 0.0,
+        "per_class": {
+          "en": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "kn_rom": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 407.0
+          },
+          "ta_rom": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 3311.0
+          },
+          "ml_rom": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 912.0
+          },
+          "hi_rom": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "other": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "labels": [
+            "en",
+            "kn_rom",
+            "ta_rom",
+            "ml_rom",
+            "hi_rom",
+            "other"
+          ],
+          "matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              122,
+              0,
+              0,
+              1,
+              0,
+              284
+            ],
+            [
+              1080,
+              0,
+              0,
+              0,
+              0,
+              2231
+            ],
+            [
+              260,
+              0,
+              0,
+              0,
+              0,
+              652
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "tatoeba": {
+        "n": 3000,
+        "accuracy": 0.9683,
+        "macro_f1": 0.164,
+        "per_class": {
+          "en": {
+            "precision": 1.0,
+            "recall": 0.9683,
+            "f1-score": 0.9839,
+            "support": 3000.0
+          },
+          "kn_rom": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "ta_rom": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "ml_rom": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "hi_rom": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "other": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          }
+        },
+        "confusion_matrix": {
+          "labels": [
+            "en",
+            "kn_rom",
+            "ta_rom",
+            "ml_rom",
+            "hi_rom",
+            "other"
+          ],
+          "matrix": [
+            [
+              2905,
+              0,
+              0,
+              0,
+              0,
+              95
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "qualitative_probes": [
+    {
+      "text": "Yeno hengidiyaa",
+      "primary": "ta_rom",
+      "confidence": 0.6483,
+      "tokens": [
+        [
+          "Yeno",
+          "en",
+          0.7134
+        ],
+        [
+          "hengidiyaa",
+          "ta_rom",
+          0.9664
+        ]
+      ]
+    },
+    {
+      "text": "Neenga epdi irukeenga",
+      "primary": "ta_rom",
+      "confidence": 0.9993,
+      "tokens": [
+        [
+          "Neenga",
+          "ta_rom",
+          0.965
+        ],
+        [
+          "epdi",
+          "en",
+          0.5038
+        ],
+        [
+          "irukeenga",
+          "ta_rom",
+          0.9736
+        ]
+      ]
+    },
+    {
+      "text": "Sukham ano",
+      "primary": "ml_rom",
+      "confidence": 0.9288,
+      "tokens": [
+        [
+          "Sukham",
+          "ml_rom",
+          0.9764
+        ],
+        [
+          "ano",
+          "en",
+          0.8936
+        ]
+      ]
+    },
+    {
+      "text": "How are you?",
+      "primary": "en",
+      "confidence": 0.9975,
+      "tokens": [
+        [
+          "How",
+          "en",
+          0.7768
+        ],
+        [
+          "are",
+          "kn_rom",
+          0.6542
+        ],
+        [
+          "you",
+          "en",
+          0.8019
+        ],
+        [
+          "?",
+          "univ",
+          null
+        ]
+      ]
+    },
+    {
+      "text": "Naan office ge hogbeku today.",
+      "primary": "kn_rom",
+      "confidence": 0.8244,
+      "tokens": [
+        [
+          "Naan",
+          "kn_rom",
+          0.9333
+        ],
+        [
+          "office",
+          "en",
+          0.8604
+        ],
+        [
+          "ge",
+          "kn_rom",
+          0.9104
+        ],
+        [
+          "hogbeku",
+          "kn_rom",
+          0.9558
+        ],
+        [
+          "today",
+          "en",
+          0.7753
+        ],
+        [
+          ".",
+          "univ",
+          null
+        ]
+      ]
+    },
+    {
+      "text": "Bro, kal college jaana hai.",
+      "primary": "kn_rom",
+      "confidence": 0.9412,
+      "tokens": [
+        [
+          "Bro",
+          "en",
+          0.7413
+        ],
+        [
+          ",",
+          "univ",
+          null
+        ],
+        [
+          "kal",
+          "kn_rom",
+          0.7911
+        ],
+        [
+          "college",
+          "kn_rom",
+          0.5907
+        ],
+        [
+          "jaana",
+          "kn_rom",
+          0.9864
+        ],
+        [
+          "hai",
+          "en",
+          0.6221
+        ],
+        [
+          ".",
+          "univ",
+          null
+        ]
+      ]
+    },
+    {
+      "text": "Today college ge hogalla.",
+      "primary": "kn_rom",
+      "confidence": 0.9666,
+      "tokens": [
+        [
+          "Today",
+          "en",
+          0.7753
+        ],
+        [
+          "college",
+          "kn_rom",
+          0.5907
+        ],
+        [
+          "ge",
+          "kn_rom",
+          0.9104
+        ],
+        [
+          "hogalla",
+          "kn_rom",
+          0.9565
+        ],
+        [
+          ".",
+          "univ",
+          null
+        ]
+      ]
+    },
+    {
+      "text": "ಇವತ್ತು class ತುಂಬಾ boring ide.",
+      "primary": "kn",
+      "confidence": null,
+      "tokens": [
+        [
+          "ಇವತ್ತು",
+          "kn",
+          1.0
+        ],
+        [
+          "class",
+          "en",
+          0.9033
+        ],
+        [
+          "ತುಂಬಾ",
+          "kn",
+          1.0
+        ],
+        [
+          "boring",
+          "en",
+          0.9766
+        ],
+        [
+          "ide",
+          "kn_rom",
+          0.8408
+        ],
+        [
+          ".",
+          "univ",
+          null
+        ]
+      ]
+    }
+  ],
+  "runtime_seconds": 223.2
+}

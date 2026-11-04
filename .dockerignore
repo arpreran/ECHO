@@ -1,0 +1,12 @@
+**/.env
+.venv/
+**/__pycache__/
+**/.pytest_cache/
+frontend/node_modules/
+frontend/dist/
+database/
+datasets/raw/dakshina/
+datasets/raw/tatoeba/
+report_and_presentation/
+.claude/
+.git/
